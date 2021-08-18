@@ -1,0 +1,11 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 651100302@qq.com
+    password: 1231233
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.123.222:3306/send_mail_center?allowMultiQueries=true&useAffectedRows=true&characterEncoding=utf8
+    username: root
+    password: w975091421
