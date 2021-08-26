@@ -11,11 +11,11 @@ import top.ersut.mail.send.sdk.config.ClientConfig;
 
 import java.time.Duration;
 
-public class RequestUtil {
+public class ClientUtil {
     private WebClient webClient;
     private final Duration timeout = Duration.ofSeconds(5);
 
-    public RequestUtil(String host,String key){
+    public ClientUtil(String host, String key){
         webClient = new ClientConfig(host,key).getWebClient();
     }
 

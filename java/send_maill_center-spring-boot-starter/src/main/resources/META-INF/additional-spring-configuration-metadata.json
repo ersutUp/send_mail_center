@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "name": "mailSend",
+      "description": "邮件发送中心sdk配置"
+    }
+  ],
+  "properties": [
+    {
+      "name": "mailSend.enabled",
+      "description": "邮件发送中心sdk的开关",
+      "defaultValue": true
+    },
+    {
+      "name": "mailSend.host",
+      "description": "邮件发送中心的地址"
+    },
+    {
+      "name": "mailSend.key",
+      "description": "邮件发送中心的秘钥"
+    }
+  ]
+}

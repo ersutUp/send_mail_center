@@ -10,22 +10,25 @@
 	</parent>
 	<groupId>top.ersut.mail</groupId>
 	<artifactId>send</artifactId>
-	<version>${send.version}</version>
+	<version>1.0.1</version>
 	<name>send_mail_center</name>
 	<packaging>pom</packaging>
 
 	<properties>
-		<send.version>0.0.1-SNAPSHOT</send.version>
+		<send.version>1.0.1</send.version>
 		<java.version>1.8</java.version>
 		<aspectj.version>1.9.6</aspectj.version>
 		<springfox.version>3.0.0</springfox.version>
 		<mysql.version>5.1.49</mysql.version>
+		<skipTests>true</skipTests>
 	</properties>
 	<modules>
 		<module>send_web</module>
 		<module>send_sdk</module>
+		<module>send_sdk_android</module>
 		<module>send_model</module>
 		<module>send_maill_center-spring-boot-starter</module>
+		<module>send_maill_center-test-spring-boot-starter</module>
 	</modules>
 
 	<dependencyManagement>
@@ -53,6 +56,21 @@
 				<version>${aspectj.version}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>top.ersut.mail</groupId>
+				<artifactId>send_model</artifactId>
+				<version>${send.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>top.ersut.mail</groupId>
+				<artifactId>send_sdk</artifactId>
+				<version>${send.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>top.ersut.mail</groupId>
+				<artifactId>send_maill_center-spring-boot-starter</artifactId>
+				<version>${send.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

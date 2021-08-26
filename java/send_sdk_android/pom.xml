@@ -8,31 +8,35 @@
 		<version>1.0.1</version>
 	</parent>
 	<groupId>top.ersut.mail</groupId>
-	<artifactId>send_model</artifactId>
+	<artifactId>send_sdk_android</artifactId>
 	<version>1.0.1</version>
-	<name>send_model</name>
+	<name>send_sdk_android</name>
 
 	<dependencies>
+
 		<dependency>
-			<groupId>org.hibernate.validator</groupId>
-			<artifactId>hibernate-validator</artifactId>
+			<groupId>top.ersut.mail</groupId>
+			<artifactId>send_model</artifactId>
 		</dependency>
+
+
 		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<scope>test</scope>
 		</dependency>
+
 		<dependency>
-			<groupId>com.fasterxml.jackson.datatype</groupId>
-			<artifactId>jackson-datatype-jdk8</artifactId>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
 		</dependency>
+
 		<dependency>
-			<groupId>com.fasterxml.jackson.datatype</groupId>
-			<artifactId>jackson-datatype-jsr310</artifactId>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>okhttp</artifactId>
+			<version>3.12.0</version>
 		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.module</groupId>
-			<artifactId>jackson-module-parameter-names</artifactId>
-		</dependency>
+
 	</dependencies>
 
 </project>

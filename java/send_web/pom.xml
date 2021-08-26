@@ -5,18 +5,17 @@
 	<parent>
 		<groupId>top.ersut.mail</groupId>
 		<artifactId>send</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.1</version>
 	</parent>
 	<groupId>top.ersut.mail</groupId>
 	<artifactId>send_web</artifactId>
-	<version>${send.version}</version>
+	<version>1.0.1</version>
 	<name>send_web</name>
 
 	<dependencies>
 		<dependency>
 			<groupId>top.ersut.mail</groupId>
 			<artifactId>send_model</artifactId>
-			<version>${send.version}</version>
 		</dependency>
 
 		<dependency>
